@@ -1,24 +1,27 @@
 import React from "react";
-import { useQuery } from "@tanstack/react-query";
-// import hook for useuseApplimittation
-import { useApplication } from "./hooks/useApplimittation"; // Uncomment if you have a custom hook
+import { useApplication } from "./hooks/useApplication.tsx";
 
 function App() {
   const { data, isLoading, error } = useApplication();
 
+  const renderContent = () => {
+    if (data) {
+      return (
+        <>
+          <h2>Data:</h2>
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        </>
+      );
+    }
+    if (isLoading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+    return <p>No data available.</p>;
+  };
+
   return (
     <div>
       <h1>Application Status</h1>
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : error ? (
-        <p>Error fetching application data: {error.message}</p>
-      ) : (
-        <div>
-          <p>Name: {data?.name}</p>
-          <p>Status: {data?.status}</p>
-        </div>
-      )}
+      {renderContent()}
     </div>
   );
 }
