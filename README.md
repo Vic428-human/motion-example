@@ -1,37 +1,20 @@
-# React + TypeScript + Vite
+# 專案啟用 React + TypeScript + Vite + redux toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+npm i
+nvm use 18
+npm run dev
 
-Currently, two official plugins are available:
+```
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### 專案用途
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> 結合 Redux Toolkit + TanStack Query (React Query) + vite 的 demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-#### 啟用 vite + react + typescript 專案
+#### 一開始建置 vite + react + typescript 專案
 
 ```js
 npm create vite@latest my-app -- --template react-ts
