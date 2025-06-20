@@ -24,3 +24,7 @@ npm run dev
 ```js
 npm create vite@latest my-app -- --template react-ts
 ```
+
+### 檔案位置
+
+在 mac 且 檔名是 my-app
