@@ -1,7 +1,6 @@
 ## 專案當前進度
 
-> 已經有基本的 tanstack query hook 的用法了，等哪天需要用到 redux toolkit ，需要複習的時候，我再把 redux toolkit 引用到該專案，
-> 專案更新至 2025/0614
+> 已於2025/0621完成，暫時不會繼續更新
 
 ### 專案啟用 React + TypeScript + Vite + redux toolkit
 
