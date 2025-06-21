@@ -16,7 +16,7 @@ npm run dev
 
 ### 專案用途
 
-> 結合 Redux Toolkit + TanStack Query (React Query) + vite 的 demo
+> 結合 TanStack Query (React Query) + vite 的 demo，且最小程度透過motion套件實踐出幣種閃爍動態跟滑入滑出效果。
 
 #### 一開始建置 vite + react + typescript 專案
 
